@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   generation: 1
   labels:
-    app: last-resort
-  name: repo1done
+    app: project1
+  name: project1
   namespace: default
 spec:
   progressDeadlineSeconds: 600
@@ -12,7 +12,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: last-resort
+      app: project1
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -22,12 +22,12 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: last-resort
+        app: project1
     spec:
       containers:
-        - image: neo87z/repo1:1e05bebb1c48c71eb4a6ddcdb8ea615abebf3ba7
+        - image: neo87z/project1:{{tag}}
           imagePullPolicy: Always
-          name: repo1
+          name: project1
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File

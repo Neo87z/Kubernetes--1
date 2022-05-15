@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: repo1done
-  name: repo1done
+    app: project1
+  name: project1
 spec:
   ports:
   - port: 3000
     protocol: TCP
     targetPort: 3000
   selector:
-    app: repo1done
+    app: project1
 status:
   loadBalancer: {}
