@@ -20,5 +20,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/repo1:${{ github.sha }}
-      
+          tags: ${{ secrets.DOCKER_USERNAME }}/project1:${{ github.sha }}
+     
