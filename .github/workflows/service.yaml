@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: project1
-  name: project1
+    app: neo87z
+  name: neo87z
 spec:
   ports:
-  - port: 3000
+  - port: 3009
     protocol: TCP
-    targetPort: 3000
+    targetPort: 3009
   selector:
-    app: project1
+    app: neo87z
 status:
   loadBalancer: {}
